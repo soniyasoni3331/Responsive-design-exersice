@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design Assignment</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+      .container {
+        color: white;
+        margin: auto;
+        max-width: 1400px;
+      }
+
+      .table {
+        width: 99%;
+        border: 1px solid white;
+        font-size: 24px;
+      }
+      th,
+      td {
+        border-bottom: 1px solid white;
+        padding: 10px;
+        text-align: left;
+      }
+      @media screen and (max-width: 600px) {
+        .table {
+          overflow-x: auto;
+          display: block;
+        }
+        tr,
+        td {
+          white-space: nowrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student DashBoard</h1>
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        <tr>
+          <td>Rahul Sharma</td>
+          <td>rahul.sharma@gmail.com</td>
+          <td>9749673409</td>
+        </tr>
+        <tr>
+          <td>Seema</td>
+          <td>seema343@gmial.com</td>
+          <td>9087564334</td>
+        </tr>
+        <tr>
+          <td>Raj</td>
+          <td>raj.grover@gmail.com</td>
+          <td>7856093456</td>
+        </tr>
+        <tr>
+          <td>Sonu</td>
+          <td>sonu.soni34@gmail.com</td>
+          <td>9067452345</td>
+        </tr>
+        <tr>
+          <td>Reema Verma</td>
+          <td>reema.verma@gmial.com</td>
+          <td>8932455676</td>
+        </tr>
+        <tr>
+          <td>Raghav Mishra</td>
+          <td>mishraraghav@gmail.com</td>
+          <td>7856998232</td>
+        </tr>
+        <tr>
+          <td>Shivani Saini</td>
+          <td>sainishivani@gmail.com</td>
+          <td>9078563423</td>
+        </tr>
+        <tr>
+          <td>Ishika Jain</td>
+          <td>ishikajain343@gamil.com</td>
+          <td>6745982344</td>
+        </tr>
+        <tr>
+          <td>Ram Goyal</td>
+          <td>goyalram454@gmail.com</td>
+          <td>7834904590</td>
+        </tr>
+        <tr>
+          <td>Roop Rajput</td>
+          <td>roop6665@gmial.com</td>
+          <td>7856341223</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .footContainer{
+            background-color: black;
+            width: 100vw;
+            color: white;
+            min-height: 400px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            position: absolute;
+            bottom: 0px;
+        }
+        .section{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            padding: 20px;            
+        }
+        .section h1{
+            padding: 20px;            
+
+        }
+        .section p{
+            padding: 20px;    
+            color: rgb(184, 180, 180);   
+            align-items: space-between;
+            line-height: 25px;
+            word-spacing: 8px;
+            
+        }
+        .section a{
+            text-decoration: none;
+            /* color: white; */
+            color: rgb(184, 180, 180);        
+            padding: 20px;            
+
+
+        }
+        .section form{
+            display: flex;
+            color: rgb(184, 180, 180);        
+            flex-direction: column;
+            gap: 10px;
+        
+            
+        }
+        .section form input{
+            border: none;
+            padding: 15px;
+            border-radius:10px ;
+            font-size: 16px;
+        }
+        .section form button{
+            border: none;
+            padding: 15px;
+            border-radius:10px ;
+            font-size: 16px;
+            background-color: #0072e1;
+            color: white;
+        }
+        @media screen and (max-width:850px) {
+            .footContainer{
+                flex-direction: column;
+                overflow-y: scroll;
+                height: 100vh;
+                width: 100%;
+
+            }
+            .section{
+                margin-left: 50px;
+            }
+            .section h1{
+                font-size: 35px;
+            }
+            .section p,a{
+                font-size: 24px;
+                line-height: 30px;
+                word-spacing: 10px;
+            }
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <footer class="footContainer">
+        <div class="section">
+            <h1>One Card</h1>
+            <p>India's best metal credit-card. Built with full-stack tech. Backed by the principles of simplicity, transparancy, and giving back control to the user.</p>
+        </div>
+        <div class="section">
+            <h1>Navigation</h1>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Offers</a>
+
+        </div><div class="section">
+            <h1>Support</h1>
+            <a href="#">F.A.Q</a>
+            <a href="#">Cookies Policy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Support</a>
+
+        </div>
+        <div class="section">
+            <h1>Newsletter</h1>
+            <form action="">
+                <input type="email" name="" id="" placeholder="Your email id here">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        
+        
+    </footer>
+    
+</body>
+</html>

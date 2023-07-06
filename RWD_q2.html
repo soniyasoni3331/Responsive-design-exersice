@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Assignment</title>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* style for Navigation bar starts here  */
+
+      .navContainer {
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        width: 100vw;
+      }
+      .navLeft {
+        height: 99%;
+        width: 60px;
+      }
+      .navLeft img {
+        width: 50px;
+        height: 90%;
+        padding: 5px;
+        margin-left: 20px;
+      }
+
+      .navMid a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+      }
+      .btn button {
+        background-color: #0072e1;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        width: 80px;
+        font-weight: bold;
+      }
+      .bars {
+        display: none;
+      }
+      @media screen and (max-width: 632px) {
+        .navContainer {
+          height: 120px;
+          width: 712px;
+
+          
+        }
+        .navLeft img {
+          height: 70%;
+          width: 70px;
+          padding-top: 10px;
+        }
+        .navMid {
+          display: none;
+        }
+        button {
+          display: none;
+        }
+        .bars {
+          display: block;
+          font-size: 30px;
+          padding: 5px;
+          margin-right: 10px;
+          color: white;
+        }
+      }
+
+      /* style for navigation bar ends here  */
+
+      /* style for main section starts here  */
+
+      .main{
+
+        font-family: cursive;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        gap: 50px;
+      }
+      
+      .section1{
+        height: 600px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+        margin: 30px;
+        gap: 30px;
+
+      }
+      .text{
+        width: 100%;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+      }
+      .text h2{
+        padding: 20px;
+        font-size: 30px;
+      }
+      .text h1{
+        padding: 20px;
+       font-size: 50px;
+       color: #0072e1;
+      }
+      .text h4{
+        color: #0072e1;
+        padding: 20px;
+        font-size: 24px;
+        text-align: left;
+      }
+      .sponcer-img img{
+            height: 100px;
+            width: 100%;
+            margin-left: 50px;
+      }
+      div > p{
+        margin-left: 50px;
+        width: 90%;
+        text-align: start;
+      }
+      .section2{
+        height: 700px;
+        width: 50%;
+        display: flex;
+        justify-content: stretch;
+      }
+      .section2 video{
+        height: 90%;
+        width: 90%;
+        border: none;
+        margin: 20px;
+        margin-top: 0;
+
+      }
+      @media screen and (max-width:632px) {
+        
+        .main{
+          flex-direction: column;
+          gap: 0;
+        }
+        .section1, .section2{
+          width: 100%;
+        }
+        .section1{
+          margin-bottom: 0;
+        }
+        .section2{
+          margin-top: 0;
+          margin-right: 0;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <nav class="navContainer">
+        <div class="navLeft">
+          <img
+            src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+            alt="Logo"
+          />
+        </div>
+        <div class="navMid">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="btn">
+          <button>Login</button>
+        </div>
+        <div class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    <main class="main">
+        <section class="section1">
+            <div class="text">
+                <h2>Say Hi To</h2>
+                <h1>One Card</h1>
+                <h4>Co-branded Card Issuers:</h4>
+            </div>
+            <div class="sponcer-img">
+            <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="sponcere image">
+        </div>
+        <div>
+            <p>India's best metal credit card. Built with full-stack tech. Backed by  the principles of simplicity, transparancy, and giving back control to the user.</p>
+        </div>
+        </section>
+        <section class="section2" >
+            <video src="sample_video.mp4" controls  loop></video>
+        </section>
+    </main>
+    
+</body>
+</html>
